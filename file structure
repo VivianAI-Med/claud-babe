@@ -1,0 +1,8 @@
+appendicitis_app/
+├── app.py                 # Flask backend
+├── templates/
+│   └── index.html        # HTML interface (copy from artifact)
+├── appendicitis_model.pkl # Your trained model
+├── label_encoder.pkl     # Optional: if you have separate encoders
+├── requirements.txt      # Python dependencies
+└── README.md            # This file
