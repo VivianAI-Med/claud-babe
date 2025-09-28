@@ -167,3 +167,15 @@ print(f"Accuracy: {accuracy:.4f}")
 print(f"Precision: {precision:.4f}")
 print(f"Recall: {recall:.4f}")
 print(f"F1-score: {f1:.4f}")
+
+def preprocess_input(age, bmi, sex):
+    # Adjust this based on how you trained your model
+    sex_encoded = 0 if sex.lower() == 'female' else 1
+    
+    # If your model expects different features or order, modify here
+    features = np.array([[age, bmi, sex_encoded]])
+    
+    # Add any additional preprocessing your model needs
+    # (scaling, encoding, etc.)
+    
+    return features
